@@ -7,35 +7,62 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
 
-  <title>Frontend Mentor | Space tourism website</title>
+  <title>Destination</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed:wght@400;700&family=Bellefair&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./assets/styles.css">
+  <script src="./assets/script.js"></script>
 </head>
 
-<body>
-  <nav></nav>
+<body class="background-destination">
+  <nav class="navbar">
+    <div><img src="./assets/shared/logo.svg" alt="Logo" class="logo"></div>
+    <button class="menu"><img src="./assets/shared/icon-hamburger.svg" alt="Menu"></button>
+  </nav>
   <main>
-    <section>
-      <h4><span>01</span> Pick your destination</h4>
-      <figure><img src="" alt=""></figure>
-      <nav></nav>
+    <header>
+      <h4>
+        <span class="number-header">01</span>Pick your destination
+      </h4>
+    </header>
+    <figure><img src="./assets/destination/image-moon.webp" alt="Moon" class="image-moon"></figure>
+    <nav class="destination-navbar-container">
+      <ul class="destination-navbar">
+        <li>
+          <h6><a href="#" class="destination-navbar-active">Moon</a></h6>
+        </li>
+        <li>
+          <h6><a href="./destination-mars.html" class="destination-navbar-inactive">Mars</a></h6>
+        </li>
+        <li>
+          <h6><a href="./destination-europa.html" class="destination-navbar-inactive">Europa</a></h6>
+        </li>
+        <li>
+          <h6><a href="./destination-titan.html" class="destination-navbar-inactive">Titan</a></h6>
+        </li>
+      </ul>
+    </nav>
+    <header>
       <h2>Moon</h2>
-      <p>See our planet as you’ve never seen it before. A perfect relaxing trip away to help
+    </header>
+    <section>
+      <p class="destination-p">See our planet as you’ve never seen it before. A perfect relaxing trip away to help
         regain perspective and come back refreshed. While you’re there, take in some history
         by visiting the Luna 2 and Apollo 11 landing sites.</p>
     </section>
-    <section>
-      <hr>
-      <details>
-        <h6>Avg. distance</h6>
-        <h5 class="value">384,400 km</h5>
-        <h6>Est. travel time</h6>
-        <h5 class="value">3 days</h5>
-      </details>
+    <hr>
+    <section class="destination-details">
+      <h6>Avg. distance</h6>
+      <h5 class="value">384,400 km</h5>
+    </section>
+    <section class="destination-details">
+      <h6>Est. travel time</h6>
+      <h5 class="value">3 days</h5>
     </section>
   </main>
-  Moon
-  Mars
-  Europa
-  Titan
 </body>
 
 </html>

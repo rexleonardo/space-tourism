@@ -47,7 +47,7 @@ table {
 /* ===== Shared ===== */
 
 * {
-    outline: 1px solid violet;
+    /* outline: 1px solid violet; */
 }
 
 :root {
@@ -91,7 +91,11 @@ h1 {
 }
 
 h2 {
-
+    margin-top: 20px;
+    font-family: 'Bellefair', serif;
+    font-size: 56px;
+    color: var(--primary-color);
+    text-transform: uppercase;
 }
 
 h3 {
@@ -99,7 +103,6 @@ h3 {
 }
 
 h4 {
-    margin-top: 24px;
     font-family: 'Barlow Condensed', sans-serif;
     font-size: 16px;
     letter-spacing: 2.7px;
@@ -109,14 +112,23 @@ h4 {
 }
 
 h5 {
-
+    font-family: 'Bellefair', serif;
+    font-size: 28px;
+    color: var(--primary-color);
+    text-transform: uppercase;
+    text-align: center;
 }
 
 h6 {
-
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 14px;
+    letter-spacing: 2.36px;
+    color: var(--secondary-color);
+    text-transform: uppercase;
+    text-align: center;
 }
 
- p {
+p {
     margin-top: 16px;
     max-width: 327px;
     font-family: 'Barlow', sans-serif;
@@ -124,14 +136,27 @@ h6 {
     line-height: 25px;
     color: var(--secondary-color);
     text-align: center;
- }
+}
 
- a {
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     text-decoration: none;
- }
+a {
+    display: flex;
+    justify-content: center;
+    align-items: center;5
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.number-header {
+    margin-right: 18px;
+    opacity: 25%;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 700;
+}
+
+hr {
+    width: 86.67%;
+    border-color: #383b4b;
+}
 
 /* ===== Home ===== */
 
@@ -141,13 +166,17 @@ h6 {
     background-size: cover;
 }
 
+.h4-home {
+    margin-top: 24px;
+}
+
 .explore-container {
     display: flex;
     justify-content: center;
 }
 
 .explore-button {
-    margin: 65px 0 63px 0;
+    margin: 81px 0 48px 0;
     width: 150px;
     height: 150px;
     font-family: 'Bellefair', serif;
@@ -161,5 +190,56 @@ h6 {
 }
 
 /* ===== Destination ===== */
+
+.background-destination {
+    background: url("./destination/background-destination-mobile.jpg") no-repeat center center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.image-moon {
+    width: 170px;
+    height: 170px;
+    margin: 32px 0 26px 0;
+}
+
+.destination-navbar-container {
+    width: 237.5px;
+    height: 28px;
+}
+
+.destination-navbar {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+}
+
+.destination-navbar-active {
+    color: var(--primary-color);
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+    text-underline-offset: 8px;
+}
+
+.destination-navbar-inactive {
+    color: var(--secondary-color);
+}
+
+.destination-p {
+    margin: 1px 0 32px 0;
+}
+
+.destination-details {
+    margin-top: 32px;
+}
+
+.destination-details:last-child {
+    margin-bottom: 58px;
+}
+
+.value {
+    margin-top: 12px;
+}
+
 /* ===== Crew ===== */
 /* ===== Technology ===== */
