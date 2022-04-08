@@ -14,13 +14,39 @@
     href="https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed:wght@400;700&family=Bellefair&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="./assets/styles.css">
-  <script src="./assets/script.js"></script>
 </head>
 
 <body class="destination-background">
   <nav class="navbar">
     <div><img src="./assets/shared/logo.svg" alt="Logo" class="logo"></div>
-    <button class="menu"><img src="./assets/shared/icon-hamburger.svg" alt="Menu"></button>
+    <button id="toggleOpen" class="menu"><img src="./assets/shared/icon-hamburger.svg" alt="Menu"></button>
+  </nav>
+  <nav id="menu" class="sidebar-container">
+    <button id="toggleClose" class="close"><img src="./assets/shared/icon-close.svg" alt="Close"></button>
+    <ul class="nav-ul">
+      <li>
+        <a href="./index.html">
+          <h4 class="nav-h4"><span class="nav-number">01</span>Home</h4>
+        </a>
+      </li>
+      <li class="nav-li-active">
+        <a href="./destination-moon.html">
+          <h4 class="nav-h4"><span class="nav-number">02</span>Destination</h4>
+        </a>
+
+      </li>
+      <li>
+        <a href="./crew-commander.html">
+          <h4 class="nav-h4"><span class="nav-number">03</span>Crew</h4>
+        </a>
+      </li>
+      <li>
+        <a href="./technology-vehicle.html">
+          <h4 class="nav-h4"><span class="nav-number">04</span>Technology</h4>
+        </a>
+
+      </li>
+    </ul>
   </nav>
   <main>
     <header>
@@ -63,6 +89,7 @@
       <h5 class="destination-value">3 days</h5>
     </section>
   </main>
+  <script src="./assets/script.js"></script>
 </body>
 
 </html>

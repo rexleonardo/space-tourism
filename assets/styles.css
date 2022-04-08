@@ -44,7 +44,7 @@ table {
 	border-spacing: 0;
 }
 
-/* ===== Shared ===== */
+/* ===== Universal & Variables ===== */
 
 * {
     /* outline: 1px solid violet; */
@@ -56,23 +56,7 @@ table {
     --tertiary-color: #0b0d17;
 }
 
-.navbar {
-    margin: 24px;
-    display: flex;
-    justify-content: space-between;
-}
-
-.logo {
-    width: 40px;
-    height: 40px;
-}
-
-.menu {
-    display: flex;
-    align-items: center;
-    border: none;
-    background: none;
-}
+/* ===== General ===== */
 
 main {
     display: flex;
@@ -158,15 +142,83 @@ hr {
     border-color: #383b4b;
 }
 
+/* ===== Navigation Bar ===== */
+
+.navbar {
+    margin: 24px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 40px;
+    height: 40px;
+}
+
+.menu, .close {
+    display: flex;
+    align-items: center;
+    border: none;
+    background: none;
+}
+
+.menu:hover, .close:hover {
+    cursor: pointer;
+}
+
+.sidebar-container {
+    display: none;
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    width: 254px;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.04);
+    backdrop-filter: blur(81.5485px);
+}
+
+.close {
+    float: right;
+    justify-content: end;
+    margin: 33.95px 26.45px;
+}
+
+.nav-ul  {
+    margin: 118px 0 0 32px;
+}
+
+.nav-ul > li {
+    margin-top: 32px;
+}
+
+.nav-ul > li > a {
+    justify-content: start;
+}
+
+.nav-li-active {
+    border-right: 3px solid var(--primary-color);
+}
+
+.nav-h4 {
+    color: var(--primary-color);
+    line-height: 31px;
+}
+
+.nav-number {
+    margin-right: 14px;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 700;
+}
+
 /* ===== Home ===== */
 
-.background-home {
+.home-background {
     background: url("./home/background-home-mobile.jpg") no-repeat center center;
     background-attachment: fixed;
     background-size: cover;
 }
 
-.h4-home {
+.home-h4 {
     margin-top: 24px;
 }
 
@@ -297,4 +349,26 @@ hr {
 
 .technology-p {
     margin-bottom: 81px;
+}
+
+/* ===== Tablet ===== */
+
+@media (min-width: 768px) {
+
+    /* ===== Shared ===== */
+
+    .logo {
+        width: 48px;
+        height: 48px;
+    }
+
+    /* ===== Home ===== */
+
+    .home-background {
+        background: url("./home/background-home-tablet.jpg") no-repeat center center;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+
+
 }
